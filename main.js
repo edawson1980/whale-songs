@@ -17,4 +17,8 @@ for(let i = 0; i < input.length; i++){ //this loop runs through each character i
   if(input[i] === 'e'){
     resultArray.push(input[i]);
   }
+  //now check for Us
+  if(input[i] === 'u'){
+    resultArray.push(input[i]);
+  }
 };
