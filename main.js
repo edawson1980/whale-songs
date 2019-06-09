@@ -14,15 +14,20 @@ for(let i = 0; i < input.length; i++){ //this loop runs through each character i
   now we have to recheck for Es and Us.  The first (inner) loop just throws
   all the vowels into the results array, and now we go through input again to find Es and Us again.
   because doubling.*/
-  if(input[i] === 'e'){
-    resultArray.push(input[i]);
-  }
-  //now check for Us
-  if(input[i] === 'u'){
+  // if(input[i] === 'e'){
+  //   resultArray.push(input[i]);
+  // }
+  // //now check for Us
+  // if(input[i] === 'u'){
+  //   resultArray.push(input[i]);
+  // }
+  if((input[i] === 'e') || (input[i] === 'u')){
     resultArray.push(input[i]);
   }
 };
 
-let prettyResult = resultArray.join(" ");
-let finalTranslation = prettyResult.toUpperCase(); //has to be in this order, b/c toUpperCase only works on strings
+// let prettyResult = resultArray.join(" ");
+// let finalTranslation = prettyResult.toUpperCase(); //has to be in this order, b/c toUpperCase only works on strings
+
+let finalTranslation = resultArray.join(" ").toUpperCase();
 console.log(finalTranslation);
