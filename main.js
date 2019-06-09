@@ -10,4 +10,11 @@ for(let i = 0; i < input.length; i++){ //this loop runs through each character i
       resultArray.push(vowels[v]); //add any vowels in input to the results array
     }
   }
+  /*scientifically, whales double Es and Us, so
+  now we have to recheck for Es and Us.  The first (inner) loop just throws
+  all the vowels into the results array, and now we go through input again to find Es and Us again.
+  because doubling.*/
+  if(input[i] === 'e'){
+    resultArray.push(input[i]);
+  }
 };
