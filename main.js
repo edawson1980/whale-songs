@@ -22,3 +22,7 @@ for(let i = 0; i < input.length; i++){ //this loop runs through each character i
     resultArray.push(input[i]);
   }
 };
+
+let prettyResult = resultArray.join(" ");
+let finalTranslation = prettyResult.toUpperCase(); //has to be in this order, b/c toUpperCase only works on strings
+console.log(finalTranslation);
